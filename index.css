@@ -101,7 +101,7 @@ footer a:hover {
 .dark-theme header {
     background-color: #222;
 }
-.dark-theme p {
+.dark-theme .intro p,.dark-theme .benefits ul, .dark-theme .challenges ul {
     color: #fff;
 }
 .dark-theme section {
