@@ -1,114 +1,44 @@
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid + Flex Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f7f9fc;
-    line-height: 1.6;
-}
+    <div class="container">
+        <header>
+            <h1>My Website</h1>
+        </header>
 
-header {
-    background-color: #28a745;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
-header h1 {
-    font-size: 2.5em;
-}
+        <main>
+            <section class="cards">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+            </section>
+        </main>
 
-header p {
-    font-size: 1.2em;
-}
+        <aside>
+            <h3>Side Content</h3>
+            <p>This is some additional information.</p>
+        </aside>
 
-#theme-toggle {
-    margin-top: 10px;
-    padding: 8px 16px;
-    font-size: 1em;
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        <footer>
+            <p>&copy; 2025 My Website</p>
+        </footer>
+    </div>
 
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    color: #28a745;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-.grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.grid-item {
-    flex: 1 1 300px;
-    background-color: #e9ecef;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.grid-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-footer a {
-    color: #fff;
-}
-
-footer a:hover {
-    color: #28a745;
-}
-
-/* Dark Theme */
-.dark-theme body {
-    background-color: #333;
-    color: #f7f9fc;
-}
-
-.dark-theme header {
-    background-color: #222;
-}
-.dark-theme .intro p,.dark-theme .benefits ul, .dark-theme .challenges ul {
-    color: #fff;
-}
-.dark-theme section {
-    background-color: #444;
-}
-
-.dark-theme #theme-toggle {
-    background-color: #444;
-    color: #f7f9fc;
-}
+</body>
+</html>
